@@ -1,0 +1,58 @@
+body {
+        font-family: "Georgia", serif;
+        background: #f4f7f4;
+        margin: 0;
+        color: #2f3e2f;
+    }
+    header {
+        background: #0b5c2c;
+        color: white;
+        padding: 2rem;
+        text-align: center;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+    }
+    nav {
+        background: #144d2a;
+        padding: 0.5rem;
+        text-align: center;
+    }
+    nav a {
+        color: #d8ffd8;
+        margin: 0 1rem;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .container {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 1rem;
+    }
+    .section {
+        background: white;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        border-left: 6px solid #0b5c2c;
+        border-radius: 4px;
+    }
+    h2 {
+        margin-top: 0;
+        color: #0b5c2c;
+    }
+    .pledge-box {
+        background: #e8f5e8;
+        padding: 1rem;
+        border: 1px solid #bcd9bc;
+        border-radius: 4px;
+        margin-top: 1rem;
+    }
+    footer {
+        background: #0b5c2c;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
