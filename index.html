@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>St. Patrick’s Fathers Guild</title>
+<style>
+    body {
+        font-family: "Georgia", serif;
+        background: #f4f7f4;
+        margin: 0;
+        color: #2f3e2f;
+    }
+    header {
+        background: #0b5c2c;
+        color: white;
+        padding: 2rem;
+        text-align: center;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+    }
+    nav {
+        background: #144d2a;
+        padding: 0.5rem;
+        text-align: center;
+    }
+    nav a {
+        color: #d8ffd8;
+        margin: 0 1rem;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .container {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 1rem;
+    }
+    .section {
+        background: white;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        border-left: 6px solid #0b5c2c;
+        border-radius: 4px;
+    }
+    h2 {
+        margin-top: 0;
+        color: #0b5c2c;
+    }
+    .pledge-box {
+        background: #e8f5e8;
+        padding: 1rem;
+        border: 1px solid #bcd9bc;
+        border-radius: 4px;
+        margin-top: 1rem;
+    }
+    footer {
+        background: #0b5c2c;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>St. Patrick’s Fathers Guild</h1>
+    <p>Strengthening Fathers. Honoring Grandfathers. Serving Families.</p>
+</header>
+
+<nav>
+    <a href="#mission">Mission</a>
+    <a href="#pledge">The Pledge</a>
+    <a href="#registry">Prayer Registry</a>
+    <a href="#donate">Donate</a>
+</nav>
+
+<div class="container">
+
+    <div id="mission" class="section">
+        <h2>Our Mission</h2>
+        <p>
+            St. Patrick’s Fathers Guild is a charitable organization dedicated to supporting 
+            fathers and grandfathers who are welcoming a new child into their family. 
+            Through prayer and care packages, we help men embrace their 
+            vocation with strength and devotion.
+        </p>
+    </div>
+
+    <div id="pledge" class="section">
+        <h2>The Father’s & Grandfather’s Pledge</h2>
+        <p>
+            Before receiving a care package, each man makes a simple but powerful pledge:
+        </p>
+        <div class="pledge-box">
+            <p><strong>“I pledge to be the best father or grandfather I can be, 
+            to protect, guide, and love the children entrusted to me,  
+            and to seek God’s grace daily in fulfilling this vocation.”</strong></p>
+        </div>
+        <p>
+            After making the pledge, they are enrolled in our Prayer Registry and receive 
+            a care package prepared by our volunteers.
+        </p>
+
+        <!-- Attestation Form Begins -->
+        <h3 style="color:#0b5c2c; margin-top:2rem;">Fatherhood Attestation Form</h3>
+        <p>Please complete this brief, non-invasive attestation to receive your care package.</p>
+
+        <form id="attestationForm" action="#" method="POST" 
+              style="background:#e8f5e8; padding:1rem; border:1px solid #bcd9bc; border-radius:4px;">
+
+            <label><strong>Your Full Name:</strong></label><br>
+            <input type="text" name="father_name" required 
+                   style="width:100%; padding:0.5rem; margin-bottom:1rem;"><br>
+
+            <label><strong>Are you an expecting father or grandfather?</strong></label><br>
+            <select name="role" required 
+                    style="width:100%; padding:0.5rem; margin-bottom:1rem;">
+                <option value="father">Expecting Father</option>
+                <option value="grandfather">Expecting Grandfather</option>
+            </select><br>
+
+            <label><strong>Baby’s Expected Due Date:</strong></label><br>
+            <input type="date" name="due_date" required 
+                   style="width:100%; padding:0.5rem; margin-bottom:1rem;"><br>
+
+            <label><strong>Mailing Address:</strong></label><br>
+            <textarea name="address" required
+              style="width:100%; padding:0.5rem; margin-bottom:1rem; height:80px;"
+              placeholder="Street, City, State, ZIP"></textarea><br>
+
+            <label><strong>Attestation:</strong></label>
+            <p style="font-style:italic; margin-top:0;">
+                “I affirm that I am an expecting father or grandfather, and I request enrollment 
+                in the Prayer Registry and a care package from St. Patrick’s Fathers Guild.”
+            </p>
+
+            <label><strong>Your Signature (type your name):</strong></label><br>
+            <input type="text" name="signature" required 
+                   style="width:100%; padding:0.5rem; margin-bottom:1rem;"><br>
+
+            <button type="submit" 
+                    style="background:#0b5c2c; color:white; padding:0.75rem 1.5rem; border:none; border-radius:4px; font-size:1rem; cursor:pointer;">
+                Submit Attestation
+            </button>
+        </form>
+        <!-- Attestation Form Ends -->
+
+    </div>
+
+    <div id="registry" class="section">
+        <h2>Prayer Registry</h2>
+        <p>
+            All fathers and grandfathers who make the pledge are placed on our perpetual 
+            prayer list. Donors may also request to be added to the registry.
+        </p>
+        <p>
+            Our guild prays weekly for:
+        </p>
+        <ul>
+            <li>Expectant fathers and grandfathers</li>
+            <li>Families welcoming new children</li>
+            <li>Donors who support our mission</li>
+        </ul>
+    </div>
+
+    <div id="donate" class="section">
+        <h2>Support the Guild</h2>
+        <p>
+            Donations help us assemble care packages, maintain the prayer registry, and 
+            expand our outreach. Every donor may request inclusion in the prayer registry.
+        </p>
+        <p><strong>To donate, please contact us or visit our donation page.</strong></p>
+    </div>
+
+</div>
+
+<footer>
+    <p>© St. Patrick’s Fathers Guild — Deo Gratias</p>
+</footer>
+
+<!-- EMAIL SUBMISSION SCRIPT -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const form = document.querySelector("#attestationForm");
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const data = {
+            father_name: form.father_name.value,
+            role: form.role.value,
+            due_date: form.due_date.value,
+            address: form.address.value,
+            signature: form.signature.value
+        };
+
+        const body = `
+Dear St. Patrick’s Fathers Guild,
+
+I affirm that I am an expecting ${data.role} and request enrollment in the Prayer Registry and a care package.
+
+Name: ${data.father_name}
+Role: ${data.role}
+Baby’s Due Date: ${data.due_date}
+
+Mailing Address:
+${data.address}
+
+Pledge:
+"I pledge to be the best father or grandfather I can be, to protect, guide, and love the children entrusted to me, and to seek God’s grace daily in fulfilling this vocation."
+
+Signature: ${data.signature}
+
+Deo gratias.
+        `;
+
+        const mailtoLink = `mailto:guild@yourdomain.org?subject=Fatherhood Attestation – Care Package Request&body=${encodeURIComponent(body)}`;
+
+        window.location.href = mailtoLink;
+    });
+
+});
+</script>
+
+</body>
+</html>
