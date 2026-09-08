@@ -199,7 +199,7 @@ document.addEventListener("DOMContentLoaded", function () {
             address: form.address.value,
             signature: form.signature.value
         };
-
+        
         const body = `
 Dear St. Patrick’s Fathers Guild,
 
@@ -220,7 +220,7 @@ Signature: ${data.signature}
 Deo gratias.
         `;
 
-        const mailtoLink = `mailto:guild@yourdomain.org?subject=Fatherhood Attestation – Care Package Request&body=${encodeURIComponent(body)}`;
+        const mailtoLink = `mailto:stpatsfathersguild@gmail.com?subject=Fatherhood Attestation – Care Package Request&body=${encodeURIComponent(body)}`;
 
         window.location.href = mailtoLink;
     });
