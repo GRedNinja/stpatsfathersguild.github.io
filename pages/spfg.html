@@ -76,6 +76,7 @@
     <a href="#mission">Mission</a>
     <a href="#pledge">The Pledge</a>
     <a href="#registry">Prayer Registry</a>
+    <a href="blog.html">Blog</a>
     <a href="#donate">Donate</a>
 </nav>
 
@@ -199,7 +200,7 @@ document.addEventListener("DOMContentLoaded", function () {
             address: form.address.value,
             signature: form.signature.value
         };
-
+        
         const body = `
 Dear St. Patrick’s Fathers Guild,
 
@@ -220,7 +221,7 @@ Signature: ${data.signature}
 Deo gratias.
         `;
 
-        const mailtoLink = `mailto:guild@yourdomain.org?subject=Fatherhood Attestation – Care Package Request&body=${encodeURIComponent(body)}`;
+        const mailtoLink = `mailto:stpatsfathersguild@gmail.com?subject=Fatherhood Attestation – Care Package Request&body=${encodeURIComponent(body)}`;
 
         window.location.href = mailtoLink;
     });
@@ -230,4 +231,3 @@ Deo gratias.
 
 </body>
 </html>
-
